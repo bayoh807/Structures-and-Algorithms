@@ -1,14 +1,12 @@
 package array
 
-import "strings"
-
 func IsUniqueChars(str string) bool {
 	if len(str) > 128 {
 		return false
 	} else {
-		charSet := map[string]bool{}
-		strSplit := strings.Split(str, "")
-		for _, s := range strSplit {
+		var charSet [128]bool
+
+		for _, s := range str {
 
 			if val := charSet[s]; val {
 				return false
@@ -19,9 +17,5 @@ func IsUniqueChars(str string) bool {
 		}
 		return true
 	}
-
-}
-
-func Permutation(str, t string) bool {
 
 }

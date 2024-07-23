@@ -12,7 +12,7 @@ func main() {
 	//
 	//fmt.Printf("%v \n", test)
 	//fmt.Print("finish \n")
-	res := array.IsUniqueChars("aabc\n")
+	res := array.IsUniqueChars("abc\n")
 	fmt.Printf("res : %v", res)
 }
 
