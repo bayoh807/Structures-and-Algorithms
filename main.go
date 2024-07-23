@@ -12,8 +12,8 @@ func main() {
 	//
 	//fmt.Printf("%v \n", test)
 	//fmt.Print("finish \n")
-	res := array.IsUniqueChars("abc\n")
-	fmt.Printf("res : %v", res)
+	res := array.Permutation("bac", "cba")
+	fmt.Printf("res : %v\n", res)
 }
 
 func checkReturnWord(input, compare string) bool {
