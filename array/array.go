@@ -38,3 +38,24 @@ func Permutation(str1, str2 string) bool {
 		return true
 	}
 }
+
+func Permutation2(str1, str2 string) bool {
+
+	var sliceArr [128]int
+
+	if count := len(str1); count != len(str2) {
+		return false
+	} else {
+		for _, s := range str1 {
+			sliceArr[s]++
+		}
+
+		for _, s := range str2 {
+			if check := sliceArr[s] - 1; check < 0 {
+				return false
+			}
+		}
+		return true
+	}
+
+}

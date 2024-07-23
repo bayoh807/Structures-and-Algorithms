@@ -12,7 +12,7 @@ func main() {
 	//
 	//fmt.Printf("%v \n", test)
 	//fmt.Print("finish \n")
-	res := array.Permutation("bac", "cba")
+	res := array.Permutation2("bac", "cba")
 	fmt.Printf("res : %v\n", res)
 }
 
