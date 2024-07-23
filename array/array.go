@@ -43,7 +43,7 @@ func Permutation2(str1, str2 string) bool {
 
 	var sliceArr [128]int
 
-	if count := len(str1); count != len(str2) {
+	if len(str1) != len(str2) {
 		return false
 	} else {
 		for _, s := range str1 {
