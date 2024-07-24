@@ -12,7 +12,7 @@ func main() {
 	//
 	//fmt.Printf("%v \n", test)
 	//fmt.Print("finish \n")
-	res := array.Palindrome("Tact Coa")
+	res := array.OneEditAway("pale", "balea")
 	fmt.Printf("res : %v\n", res)
 }
 

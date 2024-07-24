@@ -23,3 +23,24 @@ func Palindrome(str string) bool {
 
 	return true
 }
+
+func Palindrome1(str string) bool {
+
+	toMap := make(map[string]int)
+	odd := 0
+	for _, s := range str {
+		lowerStr := strings.ToLower(string(s))
+		if lowerStr != " " {
+			toMap[lowerStr]++
+		}
+
+		if val, _ := toMap[lowerStr]; val%2 == 1 {
+			odd++
+		} else {
+			odd--
+		}
+
+	}
+
+	return odd <= 1
+}
