@@ -12,7 +12,7 @@ func main() {
 	//
 	//fmt.Printf("%v \n", test)
 	//fmt.Print("finish \n")
-	res := array.Permutation2("bac", "cba")
+	res := array.UrlReplace("Mr John Smith         ", 13)
 	fmt.Printf("res : %v\n", res)
 }
 
