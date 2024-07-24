@@ -12,7 +12,7 @@ func main() {
 	//
 	//fmt.Printf("%v \n", test)
 	//fmt.Print("finish \n")
-	res := array.UrlReplace("Mr John Smith         ", 13)
+	res := array.Palindrome("Tact Coa")
 	fmt.Printf("res : %v\n", res)
 }
 
