@@ -12,7 +12,7 @@ func main() {
 	//
 	//fmt.Printf("%v \n", test)
 	//fmt.Print("finish \n")
-	res := array.OneEditAway("pale", "bale")
+	res := array.ZipString2("aappllez")
 	fmt.Printf("res : %v\n", res)
 }
 
