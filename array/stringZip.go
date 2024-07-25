@@ -41,11 +41,10 @@ func ZipString2(str string) string {
 	var letter string
 	var count int
 	var zipStr []string
-	//a2e1l2p2
-	//a2e1l2p2
-	//e1l2p2z1a2
+
 	for i, s := range newStr {
 		toStr := string(s)
+
 		if letter != toStr || i+1 >= len(newStr) {
 
 			if (letter != "" && letter != toStr) || i+1 >= len(newStr) {
