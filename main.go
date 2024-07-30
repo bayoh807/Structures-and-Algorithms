@@ -1,20 +1,48 @@
 package main
 
 import (
-	"cracking_the_coding/array"
+	link_list "cracking_the_coding/link-list"
 	"fmt"
 	"strings"
 )
 
 func main() {
 
-	arr := [][]int{
-		{1, 2, 3, 4},
-		{5, 6, 7, 8},
-		{9, 10, 11, 12},
-		{13, 14, 15, 16},
+	//arr := [][]int{
+	//	{1, 2, 3, 4},
+	//	{5, 6, 7, 8},
+	//	{9, 10, 11, 12},
+	//	{13, 14, 15, 16},
+	//}
+	One := &link_list.LinkedListNode{
+		Value: 4,
 	}
-	res := array.Rotate(arr)
+	Two := &link_list.LinkedListNode{
+		Value: 1,
+	}
+
+	Three := &link_list.LinkedListNode{
+		Value: 6,
+	}
+	Four := &link_list.LinkedListNode{
+		Value: 2,
+	}
+
+	//Five := &link_list.LinkedListNode{
+	//	Value: 1,
+	//}
+
+	One.Next = Two
+	Two.Next = Three
+	Three.Next = Four
+	Four.Next = Three
+
+	//list := []*link_list.LinkedListNode{
+	//	One, Two, Three, Four, Five,
+	//}
+	res := link_list.DeleteRepeat2(One)
+	//list := One
+
 	fmt.Printf("res : %v\n", res)
 }
 
