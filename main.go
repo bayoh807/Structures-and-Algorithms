@@ -37,11 +37,7 @@ func main() {
 	Three.Next = Four
 	Four.Next = Five
 
-	//list := []*link_list.LinkedListNode{
-	//	One, Two, Three, Four, Five,
-	//}
-	res := link_list.ReturnValue(One, 2)
-	//list := One
+	res := link_list.ReturnValue2(One, 2)
 
 	fmt.Printf("res : %v\n", res)
 }
