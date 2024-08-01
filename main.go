@@ -28,16 +28,16 @@ func main() {
 		Value: 2,
 	}
 
-	Five := &link_list.LinkedListNode{
-		Value: 1,
-	}
+	//Five := &link_list.LinkedListNode{
+	//	Value: 1,
+	//}
 
 	One.Next = Two
 	Two.Next = Three
 	Three.Next = Four
-	Four.Next = Five
+	//Four.Next = Five
 
-	res := link_list.ReturnValue2(One, 2)
+	res := link_list.DeleteMiddleNode(One)
 
 	fmt.Printf("res : %v\n", res)
 }
