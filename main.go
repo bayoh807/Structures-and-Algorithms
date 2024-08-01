@@ -28,19 +28,19 @@ func main() {
 		Value: 2,
 	}
 
-	//Five := &link_list.LinkedListNode{
-	//	Value: 1,
-	//}
+	Five := &link_list.LinkedListNode{
+		Value: 1,
+	}
 
 	One.Next = Two
 	Two.Next = Three
 	Three.Next = Four
-	Four.Next = Three
+	Four.Next = Five
 
 	//list := []*link_list.LinkedListNode{
 	//	One, Two, Three, Four, Five,
 	//}
-	res := link_list.DeleteRepeat2(One)
+	res := link_list.ReturnValue(One, 2)
 	//list := One
 
 	fmt.Printf("res : %v\n", res)
