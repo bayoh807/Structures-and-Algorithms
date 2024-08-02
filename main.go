@@ -15,7 +15,7 @@ func main() {
 	//	{13, 14, 15, 16},
 	//}
 	One := &link_list.LinkedListNode{
-		Value: 4,
+		Value: 7,
 	}
 	Two := &link_list.LinkedListNode{
 		Value: 1,
@@ -25,19 +25,22 @@ func main() {
 		Value: 6,
 	}
 	Four := &link_list.LinkedListNode{
+		Value: 5,
+	}
+
+	Five := &link_list.LinkedListNode{
+		Value: 9,
+	}
+	Six := &link_list.LinkedListNode{
 		Value: 2,
 	}
 
-	//Five := &link_list.LinkedListNode{
-	//	Value: 1,
-	//}
-
 	One.Next = Two
 	Two.Next = Three
-	Three.Next = Four
-	//Four.Next = Five
+	Four.Next = Five
+	Five.Next = Six
 
-	res := link_list.DeleteMiddleNode(One)
+	res := link_list.AddList(One, Four)
 
 	fmt.Printf("res : %v\n", res)
 }
